@@ -19,8 +19,14 @@ int main(int argc, char const *argv[]) {
     cout << "Enter output file name: ";
     cin >> file_name;
 
-    ofstream People(file_name, ios::out);
-    People << first_name << endl << last_name << endl << age << endl;
+    ofstream out_file(file_name, ios::out);
+    out_file << first_name << endl << last_name << endl << age << endl;
+
+    // Open the file and display the data
+    ifstream in_file(file_name);
+    in_file >> first_name >> last_name >> age;
+
+    cout << first_name << last_name << age << endl;
 
     return 0;
 }
