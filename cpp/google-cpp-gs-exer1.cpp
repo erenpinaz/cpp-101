@@ -1,4 +1,4 @@
-// google-cpp-gs-ex2.cpp: Eren Pinaz
+// google-cpp-gs-ex1.cpp: Eren Pinaz
 // Description: Google cpp Exercise#1
 
 #include <iostream>
