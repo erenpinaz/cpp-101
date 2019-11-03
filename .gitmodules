@@ -1,0 +1,3 @@
+[submodule "cheat-sheets/modern-cpp-features"]
+	path = cheat-sheets/modern-cpp-features
+	url = https://github.com/AnthonyCalandra/modern-cpp-features.git
