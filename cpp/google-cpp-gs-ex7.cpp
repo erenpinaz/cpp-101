@@ -1,5 +1,5 @@
 // google-cpp-gs-ex7.cpp: Eren Pinaz
-// Description:
+// Description: salary calculator based on sales
 
 #include <iostream>
 using namespace std;
@@ -27,13 +27,13 @@ void CalcMethod1(int sales) { cout << "Method1: " << kFixedSalary << endl; }
 
 void CalcMethod2(int sales) {
     double salary = kWorkHoursPerWeek * kSalaryPerHour +
-                 (sales * kPricePerProduct * kWeeklySaleCommission);
+                    (sales * kPricePerProduct * kWeeklySaleCommission);
     cout << "Method2: " << salary << endl;
 }
 
 void CalcMethod3(int sales) {
     double salary = (sales * kPricePerProduct * kWeeklySaleCommissionNoSalary) +
-                 (sales * kBonusPerProduct);
+                    (sales * kBonusPerProduct);
     cout << "Method3: " << salary << endl;
 }
 
