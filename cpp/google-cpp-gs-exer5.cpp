@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int reverseNumber(int number)
+int ReverseNumber(int number)
 {
     int reversed = 0;
     while (number > 0)
@@ -15,7 +15,7 @@ int reverseNumber(int number)
     return reversed;
 }
 
-bool checkLength(int number)
+bool CheckLength(int number)
 {
     int length = 0;
     while (number > 0)
@@ -26,7 +26,7 @@ bool checkLength(int number)
     return length <= 3;
 }
 
-bool checkDigits(int number)
+bool CheckDigits(int number)
 {
     int digit1 = number % 10;
     int digit3 = (number / 100) % 10;
@@ -40,10 +40,10 @@ int main(int argc, char const *argv[])
     cout << "Enter three-digit number (first digit > last digit): ";
     cin >> number;
 
-    if (checkLength(number) && checkDigits(number))
+    if (CheckLength(number) && CheckDigits(number))
     {
-        subtraction = number - reverseNumber(number);
-        result = reverseNumber(subtraction) + subtraction;
+        subtraction = number - ReverseNumber(number);
+        result = ReverseNumber(subtraction) + subtraction;
         cout << result << endl;
     }
     else
