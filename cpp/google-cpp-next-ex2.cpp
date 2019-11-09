@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-void DoIt(int &foo, int &goo) {
+void DoIt(int &foo, int goo) {
     foo = goo + 3;
     goo = foo + 4;
     foo = goo + 3;
